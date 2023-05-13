@@ -41,13 +41,13 @@ struct ContentView: View {
                                     VStack {
                                         
                                         Text("\(timeString(date: date))\n\n\(earthInfo())")
-                                        //                                            .frame(width: scrollViewGeometry.size.width - 40, height: scrollViewGeometry.size.height)
                                             .fixedSize(horizontal: false, vertical: true)
                                             .lineLimit(20)
                                             .font(.custom("Gmarket Sans TTF", size: 52))
                                             .baselineOffset(10)
                                             .padding(.top, 10)
                                             .padding(20)
+                                            .padding(.bottom, 80)
                                             .background(.white)
                                             .cornerRadius(12)
                                             .lineSpacing(20)
@@ -61,7 +61,6 @@ struct ContentView: View {
                                                             let contentHeight = contentGeometry.size.height
                                                             print(scrollViewHeight)
                                                             print(contentHeight)
-                                                            
                                                             
                                                             if contentHeight > scrollViewHeight {
                                                                 isScrollNeed = true

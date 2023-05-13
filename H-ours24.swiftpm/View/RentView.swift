@@ -44,14 +44,13 @@ struct RentView: View {
                         .padding(.top, 10)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 80)
-                    Text("And long touch \nthis Icon")
-                        .font(.custom("Gmarket Sans TTF", size: 40))
+                    Text("And long touch this Icon")
+                        .font(.custom("Gmarket Sans TTF", size: 32))
                         .baselineOffset(10)
                         .padding(.top, 10)
-                        .padding()
-                        .padding(.vertical, 30)
+                        .lineLimit(3)
+                        .padding(30)
                         .multilineTextAlignment(.center)
-                        .lineSpacing(20)
                     
                     Image(systemName: "touchid")
                         .resizable()
@@ -160,7 +159,7 @@ struct LetterView: View {
                     .baselineOffset(10)
                     .padding(.top, 10)
                     .padding(.horizontal, 40)
-                Text("\(timeString(date: date))")
+//                Text("\(timeString(date: date))")
                 
                 HStack {
                     Spacer()
